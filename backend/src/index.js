@@ -32,6 +32,9 @@ async function main() {
 
    // routes
     app.use('/auth', authRouter)
+    app.use('/users', usersRouter)
+    /*app.use('/plates', platesRouter)
+    app.use('/orders', ordersRouter)*/
 
   app.listen(port, () => {
     console.log(`Server running on: http://${hostname}:${port}`)
