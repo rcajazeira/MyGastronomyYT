@@ -1,0 +1,10 @@
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    background-color: #004643;
+    height: 96px;
+}
+
+.logo {
+    width: 5em;
+}
