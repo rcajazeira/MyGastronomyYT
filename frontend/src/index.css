@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Inter';
+}
+
+#root {
+	font-size: x-large;
+	background-color: #faf0ca;
+	color: #004643;
+	min-height: 100vh;
+}
