@@ -1,5 +1,5 @@
 import styles from './navbar.module.css';
-import { LuShoppingCart, LuUserCircle, LuMenu } from "react-icons/lu"
+import { LuShoppingCart, LuUser, LuMenu } from "react-icons/lu"
 
 export default function Navbar() {
     return (
@@ -10,8 +10,8 @@ export default function Navbar() {
          <div className={styles.navbarLinksContainer}>
         <a href="" className={styles.navbarLink}>Home</a>
         <a href="" className={styles.navbarLink}>Plates</a>
-        <LuShoppingCart lassName={styles.navbarLink}/>
-        <LuUserCircle className={styles.navbarLink}/>
+        <LuShoppingCart className={styles.navbarLink}/>
+        <LuUser className={styles.navbarLink}/>
         
         </div>        
         </div>
