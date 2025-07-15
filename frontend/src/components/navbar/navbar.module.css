@@ -53,7 +53,7 @@
     font-size: xx-large;
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 600px) {
     .navbarItems {
         display: none;
     }

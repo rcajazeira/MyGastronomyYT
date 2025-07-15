@@ -15,6 +15,16 @@ export default function Navbar() {
         
         </div>        
         </div>
+
+        <div className={styles.mobileNavbarItems}>
+               
+        <img className={styles.logo} src="/imgs/logo.png" alt="" />
+                
+        <div className={styles.mobileNavbarBtns}>
+        <LuShoppingCart className={styles.navbarLink} />
+        <LuMenu className={styles.navbarLink} onClick={handleOpenMenu}/>
+        </div>
+        </div>
       
         </nav>
      </>   
