@@ -37,10 +37,13 @@ export default function Navbar() {
                
        <Link to={'/'}>
         <img className={styles.logo} src="/imgs/logo.png" alt="" />
-                </Link>
+        </Link>
                 
         <div className={styles.mobileNavbarBtns}>
-        <LuShoppingCart className={styles.navbarLink} />
+
+        <Link to={'/cart'}>
+        <LuShoppingCart className={styles.navbarLink}  />
+        </Link>
         <LuMenu className={styles.navbarLink} onClick={handleOpenMenu} />
         </div>
         </div>
@@ -54,6 +57,7 @@ export default function Navbar() {
         <Link to={'/'} className={styles.navbarLink} onClick={handleOpenMenu}>Home</Link>
         <Link to={'/plates'} className={styles.navbarLink} onClick={handleOpenMenu}>Plates</Link>
         <Link to={'/profile'} className={styles.navbarLink} onClick={handleOpenMenu}>Profile</Link>
+        
     </div>
     </Drawer>
       
