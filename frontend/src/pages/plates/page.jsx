@@ -1,5 +1,5 @@
-export default function Home() {
+export default function plate() {
     return (
-        <h1>Home</h1>
+        <h1>plate</h1>
     )
 }
