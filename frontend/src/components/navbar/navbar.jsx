@@ -2,6 +2,7 @@ import styles from './navbar.module.css';
 import { LuShoppingCart, LuUser, LuMenu } from "react-icons/lu"
 import { Drawer } from '@mui/material' 
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const [openMenu, setOpenMenu] = useState(false)
