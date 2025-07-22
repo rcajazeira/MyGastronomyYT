@@ -17,19 +17,27 @@ export default function Navbar() {
         <>
         <nav className={styles.navbarContainer}>
         <div className={styles.navbarItems}>
+        <Link to={'/'}>
         <img className={styles.logo} src="/imgs/logo.png" alt="" />
+        </Link>
          <div className={styles.navbarLinksContainer}>
-        <a href="" className={styles.navbarLink}>Home</a>
-        <a href="" className={styles.navbarLink}>Plates</a>
-        <LuShoppingCart className={styles.navbarLink}/>
+        <Link to={'/'} className={styles.navbarLink}>Home</Link>
+        <Link to={'/plates'} className={styles.navbarLink}>Plates</Link>
+        <Link to={'/cart'}>
+        <LuShoppingCart className={styles.navbarLink} />
+        </Link>
+        <Link to={'/profile'}>
         <LuUser className={styles.navbarLink}/>
+                       </Link>
         
         </div>        
         </div>
 
         <div className={styles.mobileNavbarItems}>
                
+       <Link to={'/'}>
         <img className={styles.logo} src="/imgs/logo.png" alt="" />
+                </Link>
                 
         <div className={styles.mobileNavbarBtns}>
         <LuShoppingCart className={styles.navbarLink} />
@@ -37,15 +45,15 @@ export default function Navbar() {
         </div>
         </div>
 
-        <Drawer
+         <Drawer
       anchor= 'right'
       open= {openMenu}
       onClose= {handleOpenMenu}
     >
         <div className={styles.drawer}>
-    <a href="" className={styles.navbarLink}>Home</a>
-    <a href="" className={styles.navbarLink}>Plates</a>
-    <a href="" className={styles.navbarLink}>Profile</a>
+        <Link to={'/'} className={styles.navbarLink} onClick={handleOpenMenu}>Home</Link>
+        <Link to={'/plates'} className={styles.navbarLink} onClick={handleOpenMenu}>Plates</Link>
+        <Link to={'/profile'} className={styles.navbarLink} onClick={handleOpenMenu}>Profile</Link>
     </div>
     </Drawer>
       
